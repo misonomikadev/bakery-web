@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+html::-webkit-scrollbar {
+  width: 3px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  outline: 3px solid var(--primary-color);
+}
+
+body {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-drag: none;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-box-sizing: border-box;
+  -ms-content-zooming: none;
+  unicode-bidi: embed;
+}
+
+img {
+  vertical-align: middle;
+}
+
+:root {
+  --primary-color: #cd9b32;
+  --text-color: #231f20;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.line-clamp-1 {
+  -webkit-line-clamp: 1;
+  height: 1.5em;
+}
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+  height: 4.5em;
+}

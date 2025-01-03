@@ -1,0 +1,2818 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="favicon.webp" type="image/webp" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <title>Dola Bakery</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <!-- chia thanh header align-items-center ở giữa theo bootstrap 12 cột grid system (row)  -->
+          <div class="row align-items-center">
+            <!-- cục bar, d-lg-none: d display lg large / khi ở màn hình lớn thì none/ chỉ tablet và đth -->
+            <div class="header__sidebar-btn d-lg-none d-block">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- logo chiếm 2 -->
+            <div class="col-lg-2">
+              <a href="/" class="d-flex justify-content-center d-lg-block">
+                <img
+                  class="header__logo"
+                  src="/assets/img/logo.webp"
+                  alt="Dola Bakery's Logo"
+                />
+              </a>
+            </div>
+            <!-- thanh navbar chiếm 8 -->
+            <div class="col-lg-8" style="position: relative">
+              <nav class="navbar">
+                <ul class="navbar__list">
+                  <li class="navbar__list-item navbar__list-item--active">
+                    <a href="/">Trang chủ</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Giới thiệu</a>
+                  </li>
+                  <li class="navbar__list-item header__dropdown">
+                    <a href="/">
+                      Sản phẩm
+                      <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <!-- khung sản phẩm khi hover vào -->
+                    <div class="dropdown d-none d-lg-block">
+                      <!-- mục sản phẩm ở header -->
+                      <!-- chia làm 4 cột theo hàng ngang, thì mỗi cột chiếm 3 -->
+                      <div class="row g-4">
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh kem </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh sinh nhật">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sinh nhật
+                              </a>
+                            </li>
+
+                            <li title="Bánh sự kiện">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sự kiện
+                              </a>
+                            </li>
+
+                            <li title="Bánh cho trẻ em">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cho trẻ em
+                              </a>
+                            </li>
+
+                            <li title="Bánh kem đặt trước">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh kem đặt trước
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh mì </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh mì kẹp">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì kẹp
+                              </a>
+                            </li>
+
+                            <li title="Bánh cán lớp">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cán lớp
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì gối">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì gối
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì baguette">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì baguette
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì mặn">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì mặn
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì ngọt">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì ngọt
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh ngọt </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh bông lan">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh bông lan
+                              </a>
+                            </li>
+
+                            <li title="Bánh Chiffon">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Chiffon
+                              </a>
+                            </li>
+
+                            <li title="Bánh cuộn">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh cuộn
+                              </a>
+                            </li>
+
+                            <li title="Bánh su kem">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh su kem
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh tráng miệng
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh miếng">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh miếng
+                              </a>
+                            </li>
+
+                            <li title="Bánh mousse">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mousse
+                              </a>
+                            </li>
+
+                            <li title="Tiramisu/ Caramel/ Sữa chua">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Tiramisu/ Caramel/ Sữa chua
+                              </a>
+                            </li>
+
+                            <li title="Panna cotta & Pudding">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Panna cotta &amp; Pudding
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!--  -->
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Bánh khô </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh quy">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh quy
+                              </a>
+                            </li>
+
+                            <li title="Bánh mì nướng">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh mì nướng
+                              </a>
+                            </li>
+
+                            <li title="Bánh sừng bò mini">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh sừng bò mini
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh đông lạnh
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh bao">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh bao
+                              </a>
+                            </li>
+
+                            <li title="Bánh pizza">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh pizza
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/">
+                            Bánh theo mùa
+                          </a>
+
+                          <ul class="dropdown__list">
+                            <li title="Bánh quy Tết">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh quy Tết
+                              </a>
+                            </li>
+
+                            <li title="Bánh Trung thu">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Trung thu
+                              </a>
+                            </li>
+
+                            <li title="Bánh Quy Noel">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Quy Noel
+                              </a>
+                            </li>
+
+                            <li title="Bánh Kem Noel">
+                              <a class="line-clamp line-clamp-1" href="/">
+                                Bánh Kem Noel
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <a class="dropdown__title" href="/"> Đồ uống </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Tin tức</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Liên hệ</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Hệ thống cửa hàng</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="/">Câu hỏi thường gặp</a>
+                  </li>
+                </ul>
+                <!-- nút <> -->
+                <div class="navbar__control">
+                  <i id="prev" class="fa-solid fa-chevron-left"></i>
+                  <i id="next" class="fa-solid fa-chevron-right"></i>
+                </div>
+              </nav>
+            </div>
+            <!-- dãy nút tiện ích chiếm 2 -->
+            <div class="col-lg-2">
+              <ul class="header__control">
+                <!-- nút search -->
+                <div class="header__control-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <!-- nút person -->
+                <div class="header__control-icon d-none d-lg-block">
+                  <!-- d-none: màn hình nhỏ thì none, d-lg-block: màn hình to thì block -->
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <!-- nút tim -->
+                <div class="header__control-icon header__dropdown">
+                  <i class="fa-regular fa-heart">
+                    <span class="header__control-count">0</span>
+                  </i>
+                  <div class="dropdown header__control-dropdown favorite"></div>
+                </div>
+                <!-- nút cart -->
+                <div class="header__control-icon header__dropdown">
+                  <i class="fa-solid fa-cart-shopping">
+                    <span class="header__control-count">0</span>
+                  </i>
+                  <div class="dropdown header__control-dropdown cart"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header img 1 và header img 2 -->
+      <div class="section">
+        <!-- swiper.js -->
+        <div class="home-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider__item">
+                <!-- header img 1 -->
+                <img
+                  class="slider__img"
+                  src="/assets/img/slider_1.webp"
+                  alt="Slider Image"
+                />
+                <div class="slider__text d-lg-block d-none">
+                  <h1 class="slider__text-title">Bánh tươi mỗi ngày</h1>
+                  <p class="slider__text-desc">
+                    Giảm đến 20% khi đặt hàng qua web
+                  </p>
+                  <a href="/" class="slider__text-btn">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider__item">
+                <!-- header img 2 -->
+                <img
+                  class="slider__img"
+                  src="/assets/img/slider_2.webp"
+                  alt="Slider Image"
+                />
+                <div class="slider__text d-lg-block d-none">
+                  <h1 class="slider__text-title">Bánh tươi mỗi ngày</h1>
+                  <p class="slider__text-desc">
+                    Giảm đến 20% khi đặt hàng qua web
+                  </p>
+                  <a href="/" class="slider__text-btn">Xem ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+      <div class="container">
+        <!-- swiper.js/ policy-slider-->
+        <div class="section">
+          <div class="policy-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="/" class="policy__item">
+                  <img
+                    src="/assets/img/policy_1.webp"
+                    alt="Miễn phí vận chuyển"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="policy__text">
+                    <h1 class="policy__text-title">Miễn phí vận chuyển</h1>
+                    <p class="policy__text-desc">
+                      Áp dụng free ship cho tất cả đơn hàng từ 300 nghìn
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="policy__item">
+                  <img
+                    src="/assets/img/policy_2.webp"
+                    alt="Đổi trả dễ dàng"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="policy__text">
+                    <h1 class="policy__text-title">Đổi trả dễ dàng</h1>
+                    <p class="policy__text-desc">
+                      Đổi ngay trong ngày nếu như bánh không đúng yêu cầu
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="policy__item">
+                  <img
+                    src="/assets/img/policy_3.webp"
+                    alt="Hỗ trợ nhanh chóng"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="policy__text">
+                    <h1 class="policy__text-title">Hỗ trợ nhanh chóng</h1>
+                    <p class="policy__text-desc">
+                      Gọi hotline: 19006750 để được hỗ trợ ngay
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="policy__item">
+                  <img
+                    src="/assets/img/policy_4.webp"
+                    alt="Thanh toán đa dạng"
+                    width="40"
+                    height="40"
+                  />
+                  <div class="policy__text">
+                    <h1 class="policy__text-title">Thanh toán đa dạng</h1>
+                    <p class="policy__text-desc">
+                      Thanh toán khi nhận hàng, Napas, Visa, Chuyển Khoản
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- swiper.js/ category-slider -->
+        <div class="section">
+          <div class="category-slider swiper">
+            <div class="swiper-wrapper">
+              <!-- bánh kếp -->
+              <div class="swiper-slide">
+                <div class="category__item">
+                  <img src="/assets/img/category_1.webp" alt="Bánh kếp" />
+                  <div class="category__text">
+                    <h1>Bánh kếp</h1>
+                    <a href="/">Xem ngay</a>
+                  </div>
+                </div>
+              </div>
+              <!-- bánh su kem -->
+              <div class="swiper-slide">
+                <div class="category__item">
+                  <img src="/assets/img/category_2.webp" alt="Bánh su kem" />
+                  <div class="category__text">
+                    <h1>Bánh su kem</h1>
+                    <a href="/">Xem ngay</a>
+                  </div>
+                </div>
+              </div>
+              <!-- bánh mì nướng -->
+              <div class="swiper-slide">
+                <div class="category__item">
+                  <img src="/assets/img/category_3.webp" alt="Bánh mì nướng" />
+                  <div class="category__text">
+                    <h1>Bánh mì nướng</h1>
+                    <a href="/">Xem ngay</a>
+                  </div>
+                </div>
+              </div>
+              <!-- bánh khác -->
+              <div class="swiper-slide">
+                <div class="category__item">
+                  <img src="/assets/img/category_4.webp" alt="Bánh khác" />
+                  <div class="category__text">
+                    <h1>Bánh khác</h1>
+                    <a href="/">Xem ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bánh đang giảm giá -->
+        <div class="section">
+          <div class="sale">
+            <div class="section__title">
+              <a href="/" class="section__title-text">Bánh đang giảm giá</a>
+              <img src="/assets/img/title.webp" alt="Sale" />
+            </div>
+            <!-- sale__counter -->
+            <div class="sale__counter" data-period="2024-02-28T14:54:26.000Z">
+              <div class="sale__counter-item">
+                <span id="days">0</span> Ngày
+              </div>
+              <div class="sale__counter-item">
+                <span id="hours">0</span> Giờ
+              </div>
+              <div class="sale__counter-item">
+                <span id="minutes">0</span> Phút
+              </div>
+              <div class="sale__counter-item">
+                <span id="seconds">0</span> Giây
+              </div>
+            </div>
+            <!-- swiper.js/ sale__list -->
+            <div class="sale__list swiper">
+              <!-- nút '<' / prev-->
+              <div class="sale__list-btn sale__list-btn--prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-wrapper">
+                <!-- bánh sừng bò mini -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Sừng Mò Mini">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/26-52b2528f0cb542bbbcb7810df8e62.jpg?v=1692095091097"
+                        alt="Bánh Sừng Mò Mini"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 10%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <!-- nút giỏ hàng -->
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <!-- nút search -->
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <!-- nút tim -->
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Sừng Mò Mini</a
+                      >
+                      <span class="product__price product__price-new">
+                        36,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        40,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- bánh mì nướng caramen -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Mì Nướng Caramen">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/2-862efa1275f7462c9e2680575e45da.jpg?v=1692094997170"
+                        alt="Bánh Mì Nướng Caramen"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 25%
+                        </div>
+
+                        <div class="product__tag-item product__tag--new">
+                          New
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Mì Nướng Caramen</a
+                      >
+                      <span class="product__price product__price-new">
+                        15,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        20,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- bánh quy bơ mứt dâu -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Quy Bơ Mứt Dâu">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/quy-mut-dau-to-a0e6bb6421aa47bda.jpg?v=1692094744600"
+                        alt="Bánh Quy Bơ Mứt Dâu"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 16%
+                        </div>
+
+                        <div class="product__tag-item product__tag--new">
+                          New
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Quy Bơ Mứt Dâu</a
+                      >
+                      <span class="product__price product__price-new">
+                        42,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        50,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- caramen -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Caramen">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/caramel-d7c7ad0a5a654cac8f76208d.jpg?v=1692094359980"
+                        alt="Caramen"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 28%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Caramen</a
+                      >
+                      <span class="product__price product__price-new">
+                        13,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        18,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- mousse chanh leo -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Mousse Chanh Leo">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/54-472bcbe688e046dea6add446c0fe1.jpg?v=1692094268307"
+                        alt="Mousse Chanh Leo"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 21%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Mousse Chanh Leo</a
+                      >
+                      <span class="product__price product__price-new">
+                        31,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        39,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- bánh opera -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Opera 90G">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/27-5c9d407149054a0caab958d17fc7a.jpg?v=1692094146947"
+                        alt="Bánh Opera 90G"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 10%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Opera 90G</a
+                      >
+                      <span class="product__price product__price-new">
+                        36,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        40,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- bánh gato socola sữa -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Gato Socola Sữa">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-2-8c5a3322f.jpg?v=1692093730967"
+                        alt="Bánh Gato Socola Sữa"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Gato Socola Sữa</a
+                      >
+                      <span class="product__price product__price-new">
+                        40,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        50,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- bánh donut socola dâu 45G -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Donut Socola Dâu 45G">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/20-f815cca7a6314f428132e9c6b0472.jpg?v=1692092825777"
+                        alt="Bánh Donut Socola Dâu 45G"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Donut Socola Dâu 45G</a
+                      >
+                      <span class="product__price product__price-new">
+                        15,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        20,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bánh Donut Socola Trắng Hạnh Nhân 45G -->
+                <div class="swiper-slide">
+                  <div
+                    class="product"
+                    data-name="Bánh Donut Socola Trắng Hạnh Nhân 45G"
+                  >
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/khong-co-tieu-de-728-90-px-1.jpg?v=1692092788207"
+                        alt="Bánh Donut Socola Trắng Hạnh Nhân 45G"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 17%
+                        </div>
+
+                        <div class="product__tag-item product__tag--new">
+                          New
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Donut Socola Trắng Hạnh Nhân 45G</a
+                      >
+                      <span class="product__price product__price-new">
+                        20,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        24,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Bánh Hoàng Kim -->
+                <div class="swiper-slide">
+                  <div class="product" data-name="Bánh Hoàng Kim">
+                    <div class="product__thumb">
+                      <img
+                        src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/hoang-kim-e25fdadbebec4330a975e6-min.png?v=1692091986087"
+                        alt="Bánh Hoàng Kim"
+                      />
+                      <div class="product__tag">
+                        <div class="product__tag-item product__tag--discount">
+                          - 20%
+                        </div>
+                      </div>
+                      <div class="product__action">
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="product__action-btn">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
+                      <div class="product__favorite">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="product__info">
+                      <a href="/" class="product__name line-clamp line-clamp-1"
+                        >Bánh Hoàng Kim</a
+                      >
+                      <span class="product__price product__price-new">
+                        320,000₫
+                      </span>
+                      <span class="product__price product__price-old">
+                        400,000₫
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- nút '>' / next -->
+              <div class="sale__list-btn sale__list-btn--next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+        <div class="section">
+          <a class="banner" href="/">
+            <img src="/assets/img/banner.webp" alt="Banner" />
+          </a>
+        </div>
+        <!-- Bánh nướng & Sữa và Bánh & Trà -->
+        <div class="section">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- md: middle/ chia ra 2 cột ở giữa -->
+              <div class="banner banner-2" href="/">
+                <img src="/assets/img/banner_1.webp" alt="Banner" />
+                <div class="banner__text">
+                  <h3>Bánh nướng & Sữa</h3>
+                  <p>Vị béo</p>
+                  <a href="/">Khám phá tất cả</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="banner banner-2" href="/">
+                <img src="/assets/img/banner_2.webp" alt="Banner" />
+                <div class="banner__text">
+                  <h3>Bánh & Trà</h3>
+                  <p>Hương vị tươi</p>
+                  <a href="/">Khám phá tất cả</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tất cả bánh -->
+        <div class="section">
+          <div class="section__title">
+            <a class="section__title-text" href="/">Tất cả bánh</a>
+            <img src="/assets/img/title.webp" alt="Icon" />
+          </div>
+          <div class="row">
+            <!-- chia grid system 3:9 -->
+            <!-- tab bên trái -->
+            <div class="col-lg-3">
+              <ul class="tabs">
+                <!-- index 0 -->
+                <li class="tab tab--active">Bánh kem</li>
+
+                <!-- index 1 -->
+                <li class="tab">Bánh mì</li>
+
+                <!-- index 2 -->
+                <li class="tab">Bánh ngọt</li>
+
+                <!-- index 3 -->
+                <li class="tab">Bánh tráng miệng</li>
+
+                <!-- index 4 -->
+                <li class="tab">Bánh khô</li>
+              </ul>
+            </div>
+            <!-- pages bên phải -->
+            <div class="col-lg-9">
+              <div class="pages">
+                <!-- index 0 -->
+                <div class="page row page--active">
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Kem Macaron Delight"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/10-d7039cd288ac4c6a844771d4f448b-min.png?v=1692092146820"
+                          alt="Bánh Kem Macaron Delight"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Macaron Delight
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 380,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Kem Dreamy Lady">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/banh-kem-dreamy-lady-7754385160e.jpg?v=1692092024453"
+                          alt="Bánh Kem Dreamy Lady"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Dreamy Lady
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 380,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Hoàng Kim">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/hoang-kim-e25fdadbebec4330a975e6-min.png?v=1692091986087"
+                          alt="Bánh Hoàng Kim"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Hoàng Kim
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 320,000₫ </span>
+
+                          <span class="product__price-old"> 400,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mousse Chocolate"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-chua-co-ten-a480f34a8c8.jpg?v=1692091849157"
+                          alt="Bánh Mousse Chocolate"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mousse Chocolate
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 390,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Kem Sweet Heart 4"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/2-removebg-preview-1-ba51f7d4e.png?v=1692091666957"
+                          alt="Bánh Kem Sweet Heart 4"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Sweet Heart 4
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 150,000₫ </span>
+
+                          <span class="product__price-old"> 170,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Kem Amazing Chocolate"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/banh-kem-amazing-chocolate-1-c.png?v=1692091472963"
+                          alt="Bánh Kem Amazing Chocolate"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Amazing Chocolate
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 380,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Kem Endless Love"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/endless-love-c7027cf9711b4fde9b6.png?v=1692091413697"
+                          alt="Bánh Kem Endless Love"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Endless Love
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 380,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Kem Princess">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/princess-8-58d2fc00a1d24627a63e3.png?v=1692091370170"
+                          alt="Bánh Kem Princess"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Kem Princess
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 380,000₫ </span>
+
+                          <span class="product__price-old"> 420,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- index 1 -->
+                <div class="page row">
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Nhân Sen Sữa Dừa"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/sen-sua-dua-ac9cc58a8ba545aaa03c.jpg?v=1692092922617"
+                          alt="Bánh Mì Nhân Sen Sữa Dừa"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Nhân Sen Sữa Dừa
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 10,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Hạt Óc Chó Sốt Kem"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-22-a231cf82.jpg?v=1692092861340"
+                          alt="Bánh Mì Hạt Óc Chó Sốt Kem"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Hạt Óc Chó Sốt Kem
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 30,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Donut Socola Dâu 45G"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/20-f815cca7a6314f428132e9c6b0472.jpg?v=1692092825777"
+                          alt="Bánh Donut Socola Dâu 45G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Donut Socola Dâu 45G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+
+                          <span class="product__price-old"> 20,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Donut Socola Trắng Hạnh Nhân 45G"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/khong-co-tieu-de-728-90-px-1.jpg?v=1692092788207"
+                          alt="Bánh Donut Socola Trắng Hạnh Nhân 45G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Donut Socola Trắng Hạnh Nhân 45G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 20,000₫ </span>
+
+                          <span class="product__price-old"> 24,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Donut Socola Trà Xanh 45G"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/khong-co-tieu-de-728-90-px.jpg?v=1692092754963"
+                          alt="Bánh Donut Socola Trà Xanh 45G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Donut Socola Trà Xanh 45G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Xúc Xích Ruốc"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-18-5dc8fb8e.jpg?v=1692092726203"
+                          alt="Bánh Mì Xúc Xích Ruốc"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Xúc Xích Ruốc
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Nhân Sợi Gà Sốt Teriyaki"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/banh-tuoi-soi-ga-sot-teriyaki-1.jpg?v=1692092695367"
+                          alt="Bánh Mì Nhân Sợi Gà Sốt Teriyaki"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Nhân Sợi Gà Sốt Teriyaki
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Danish Nho">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/3-6b69cb608b84410b9ab355bc0267c2.jpg?v=1692092640000"
+                          alt="Bánh Danish Nho"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Danish Nho
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 20,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- index 2 -->
+                <div class="page row">
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Su Kem Nhân Vani"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/49-2f4173248ab5495babe1c9ddc804c.jpg?v=1692093856747"
+                          alt="Bánh Su Kem Nhân Vani"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Su Kem Nhân Vani
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 29,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Su Kem Nhân Socola"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/48-ba0acd283d9944f5bfa21d4026b29.jpg?v=1692093815550"
+                          alt="Bánh Su Kem Nhân Socola"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Su Kem Nhân Socola
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 30,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Muffin Socola Chip"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/17-0bab5559a3714b46b407517296419.jpg?v=1692093767223"
+                          alt="Bánh Muffin Socola Chip"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Muffin Socola Chip
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 19,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Gato Socola Sữa">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-2-8c5a3322f.jpg?v=1692093730967"
+                          alt="Bánh Gato Socola Sữa"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Gato Socola Sữa
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 40,000₫ </span>
+
+                          <span class="product__price-old"> 50,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Cuộn Socola Miếng"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/83-5760a68327794f8c9675f73336293-min-1.jpg?v=1692093694480"
+                          alt="Bánh Cuộn Socola Miếng"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Cuộn Socola Miếng
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 23,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Cuộn Vani 110G">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/42-f9db27ab52dc45ddb159636c43e27.jpg?v=1692093486117"
+                          alt="Bánh Cuộn Vani 110G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Cuộn Vani 110G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 35,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Cuộn Trà Xanh 110G"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/43-38af50a70488465286ce3ff0040db.jpg?v=1692093451703"
+                          alt="Bánh Cuộn Trà Xanh 110G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Cuộn Trà Xanh 110G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 35,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Chiffon Vani">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/41-c43fc976b5554ed9a89c65d6f22db.jpg?v=1692093413140"
+                          alt="Bánh Chiffon Vani"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Chiffon Vani
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 32,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- index 3 -->
+                <div class="page row">
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Pana Cotta">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/panna-cotta-3459143e9ffa4e01bcfe.jpg?v=1692094440360"
+                          alt="Bánh Pana Cotta"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Pana Cotta
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 22,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Sữa Chua">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/sua-chua-59d14133b74f49979da0edf.jpg?v=1692094394980"
+                          alt="Sữa Chua"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Sữa Chua
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 13,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Caramen">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/caramel-d7c7ad0a5a654cac8f76208d.jpg?v=1692094359980"
+                          alt="Caramen"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Caramen
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 13,000₫ </span>
+
+                          <span class="product__price-old"> 18,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Mousse Trà Xanh">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-31-6c5684fa.jpg?v=1692094319223"
+                          alt="Mousse Trà Xanh"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Mousse Trà Xanh
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 31,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Mousse Chanh Leo">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/54-472bcbe688e046dea6add446c0fe1.jpg?v=1692094268307"
+                          alt="Mousse Chanh Leo"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Mousse Chanh Leo
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 31,000₫ </span>
+
+                          <span class="product__price-old"> 39,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Red Velvet 90G">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/thiet-ke-khong-ten-5-0619631ba.jpg?v=1692094227680"
+                          alt="Bánh Red Velvet 90G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Red Velvet 90G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 58,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Tiramisu 90G">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/28-bd8429ed0aa94f4cb872f92dfa4b9.jpg?v=1692094191763"
+                          alt="Bánh Tiramisu 90G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Tiramisu 90G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 36,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Opera 90G">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/27-5c9d407149054a0caab958d17fc7a.jpg?v=1692094146947"
+                          alt="Bánh Opera 90G"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Opera 90G
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 36,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- index 4 -->
+                <div class="page row">
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Sừng Bò Mini">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/26-52b2528f0cb542bbbcb7810df8e62.jpg?v=1692095091097"
+                          alt="Bánh Sừng Bò Mini"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Sừng Bò Mini
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 36,000₫ </span>
+
+                          <span class="product__price-old"> 40,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Nướng Phô Mai Que"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/3-fdd1265100174cc3a112fde516b520.jpg?v=1692095046793"
+                          alt="Bánh Mì Nướng Phô Mai Que"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Nướng Phô Mai Que
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div
+                      class="page__product"
+                      data-name="Bánh Mì Nướng Caramen"
+                    >
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/2-862efa1275f7462c9e2680575e45da.jpg?v=1692094997170"
+                          alt="Bánh Mì Nướng Caramen"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Nướng Caramen
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+
+                          <span class="product__price-old"> 20,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Mì Nướng Bơ Tỏi">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/9-1cc15e71b97d405bbef69f4c166c44.jpg?v=1692094932597"
+                          alt="Bánh Mì Nướng Bơ Tỏi"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Mì Nướng Bơ Tỏi
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 15,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Quy Dừa">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/quy-dua-to-nho-9719c816ba7247699.jpg?v=1692094860540"
+                          alt="Bánh Quy Dừa"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Quy Dừa
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 42,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Quy Hạnh Nhân">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/quy-hanh-nhan-d1ba3f7c70fb43d0b1.jpg?v=1692094804490"
+                          alt="Bánh Quy Hạnh Nhân"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Quy Hạnh Nhân
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 42,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Quy Bơ Mứt Dâu">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/quy-mut-dau-to-a0e6bb6421aa47bda.jpg?v=1692094744600"
+                          alt="Bánh Quy Bơ Mứt Dâu"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Quy Bơ Mứt Dâu
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 42,000₫ </span>
+
+                          <span class="product__price-old"> 50,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-sm-6 col-12">
+                    <div class="page__product" data-name="Bánh Lady Finger">
+                      <a class="page__product-thumb" href="/">
+                        <img
+                          src="https://bizweb.dktcdn.net/thumb/large/100/492/035/products/lady-finger-6bd9609cce084948a182.jpg?v=1692094694990"
+                          alt="Bánh Lady Finger"
+                          width="150"
+                        />
+                      </a>
+                      <div class="page__product-info">
+                        <a
+                          class="page__product-name line-clamp line-clamp-1"
+                          href="/"
+                        >
+                          Bánh Lady Finger
+                        </a>
+                        <div class="product__price">
+                          <span class="product__price-new"> 42,000₫ </span>
+                        </div>
+                        <div class="page__product-action">
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </div>
+                          <div class="page__product-action-btn">
+                            <i class="fa-solid fa-heart"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="page__see-more">
+                  <a href="/" class="page__see-more-text">Xem tất cả</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="section">
+          <div class="row align-items-center g-0">
+            <div class="col-md-6">
+              <div class="about">
+                <h1>Bánh Mousse Sữa Chua</h1>
+                <p>
+                  Những chiếc bánh mousse sữa chua béo thơm, mềm ngọt là món
+                  tráng miệng được nhiều người yêu thích trong những ngày oi
+                  bức.
+                </p>
+                <a href="/">Xem ngay</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="banner about__img">
+                <img src="/assets/img/about_1.webp" alt="about" />
+              </div>
+            </div>
+            <div class="col-md-6 order-3 order-md-4 order-lg-4">
+              <div class="about about__right">
+                <h1>Bánh Dark Chocolate</h1>
+                <p>
+                  Nếu bạn là tín đồ của chocolate thì không thể bỏ qua loại bánh
+                  Dark Chocolate của Brodard. Không phải là vị đắng nhè nhẹ,
+                  bánh đem lại cho người thưởng thức vị đắng đặc trưng nguyên
+                  thủy của socola mà chỉ cần thử một lần là sẽ mê đắm.
+                </p>
+                <a href="/">Xem ngay</a>
+              </div>
+            </div>
+            <div class="col-md-6 order-4 order-md-3 order-lg-3">
+              <div class="banner about__img">
+                <img src="/assets/img/about_2.webp" alt="about" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tin tức mới nhất -->
+        <div class="section">
+          <div class="section__title">
+            <a class="section__title-text" href="/">Tin tức mới nhất</a>
+            <img src="/assets/img/title.webp" alt="Icon" />
+          </div>
+          <div class="blog-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/243062617-6096832187058353-42980.png?v=1692242235353"
+                      alt="Donut chỉ từ 8k tại Dola"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Donut chỉ từ 8k tại Dola</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Nhắc đến bánh Donut, dân sành thưởng thức hẳn không còn xa
+                      lạ gì với món ăn vặt rất phổ biến ở các nước phương Tây
+                      này. Dù có nguồn...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/banner-trang-chu-1rs-64a539e43a5.png?v=1692242153870"
+                      alt="Croissant ngàn lớp - đa dạng cách thưởng thức"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Croissant ngàn lớp - đa dạng cách thưởng thức</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Những chiếc bánh sừng bò với hương bơ thơm béo đặc trưng
+                      lại còn đưa miệng với độ giòn xốp, dai dai từ
+                      &#34;ngàn&#34; lớp bánh. Nổi bật với hình...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/244507007-6116411681767070-43207.png?v=1692242112913"
+                      alt="Bánh Tart thơm ngậy không thể bỏ lỡ"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Bánh Tart thơm ngậy không thể bỏ lỡ</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Tart trứng là loại bánh đường phố nổi tiếng ở Hong Kong
+                      được rất nhiều người yêu thích. Không những thế, trong
+                      bảng xếp hạng 50 loại món ăn ngon...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/252489486-6283379875070249-34680.png?v=1692242014303"
+                      alt="Bánh đông lạnh tiện lợi - ngon miệng - Dễ chế biến"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Bánh đông lạnh tiện lợi - ngon miệng - Dễ chế biến</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Bánh đông lạnh đã dần trở thành một sản phẩm quen thuộc
+                      cho các Mẹ Đảm sau một thời gian dài giãn cách. Sở dĩ,
+                      bánh đông lạnh được nhiều...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/banh-ngot-a7e7f12b7e484627ad945b.png?v=1692241907540"
+                      alt="Bánh ngọt - Các loại bánh ngọt được ưa chuộng tại Dola"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Bánh ngọt - Các loại bánh ngọt được ưa chuộng tại Dola</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Đối với những người có niềm đam mê với đồ ngọt thì chắc
+                      chắn bánh ngọt đã trở thành một phần không thể thiếu.
+                      Những chiếc bánh ngọt hớp hồn...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="blog">
+                  <div class="blog__thumb">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/articles/banh-quy-kho-1-2fb1b85ae77d4ca49.png?v=1692241736700"
+                      alt="Khám phá menu bánh quy khô thơm ngon, dinh dưỡng tại Dola"
+                    />
+                    <div class="blog__upload">17/08/2023</div>
+                  </div>
+                  <div class="blog__text">
+                    <a href="/" class="line-clamp line-clamp-1"
+                      >Khám phá menu bánh quy khô thơm ngon, dinh dưỡng tại
+                      Dola</a
+                    >
+                    <p class="line-clamp line-clamp-3">
+                      Bánh quy khô là món ăn thơm ngon, bổ dưỡng, được nhiều
+                      người tiêu dùng ưa thích lựa chọn. Không giống những loại
+                      bánh khác, bánh quy đặc biệt với hương...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Khách hàng nói gì trở đi -->
+      <div class="review section">
+        <div class="container">
+          <div class="section__title">
+            <span class="section__title-white" href="/">Khách hàng nói gì</span>
+            <img src="/assets/img/title.webp" alt="Icon" />
+          </div>
+          <div class="review-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__author">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/danhgia_1.jpg?1704344199488"
+                      alt="Hoàng Dung"
+                    />
+                    <div class="review__author-info">
+                      <p class="review__author-name">Hoàng Dung</p>
+                      <p class="review__author-tag">Nhân Viên Văn Phòng</p>
+                    </div>
+                  </div>
+                  <p class="review__content">
+                    Tất cả các loại bánh của Dola Bakery đều rất ngon, hương vị
+                    đặc biệt lại còn rất đa dạng. Nhân viên ở đây thì rất dễ
+                    thương, tư vấn rất nhiệt tình. Cảm ơn Dola Bakery đã mang
+                    lại cho tôi trãi nghiệm tuyệt vời. Tôi sẽ luôn ủng hộ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__author">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/danhgia_2.jpg?1704344199488"
+                      alt="Sở Bình"
+                    />
+                    <div class="review__author-info">
+                      <p class="review__author-name">Sở Bình</p>
+                      <p class="review__author-tag">Chủ Shop Đồ Ngủ Bìn Bìn</p>
+                    </div>
+                  </div>
+                  <p class="review__content">
+                    Tất cả các loại bánh của Dola Bakery đều rất ngon, hương vị
+                    đặc biệt lại còn rất đa dạng. Nhân viên ở đây thì rất dễ
+                    thương, tư vấn rất nhiệt tình. Cảm ơn Dola Bakery đã mang
+                    lại cho tôi trãi nghiệm tuyệt vời. Tôi sẽ luôn ủng hộ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__author">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/danhgia_3.jpg?1704344199488"
+                      alt="Ngọc Tuyến"
+                    />
+                    <div class="review__author-info">
+                      <p class="review__author-name">Ngọc Tuyến</p>
+                      <p class="review__author-tag">Đầu Bếp</p>
+                    </div>
+                  </div>
+                  <p class="review__content">
+                    Tất cả các loại bánh của Dola Bakery đều rất ngon, hương vị
+                    đặc biệt lại còn rất đa dạng. Nhân viên ở đây thì rất dễ
+                    thương, tư vấn rất nhiệt tình. Cảm ơn Dola Bakery đã mang
+                    lại cho tôi trãi nghiệm tuyệt vời. Tôi sẽ luôn ủng hộ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Follow Instagram -->
+      <div class="container">
+        <div class="section">
+          <div class="gallery__title">
+            <h3>Follow Instagram</h3>
+            <a href="/">@dola_bakery</a>
+          </div>
+          <div class="gallery-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery__img">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/image_ins_1.png?1704344199488"
+                    alt="Gallerys"
+                  />
+                  <div class="gallery__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__img">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/image_ins_2.png?1704344199488"
+                    alt="Gallerys"
+                  />
+                  <div class="gallery__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__img">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/image_ins_3.png?1704344199488"
+                    alt="Gallerys"
+                  />
+                  <div class="gallery__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__img">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/image_ins_4.png?1704344199488"
+                    alt="Gallerys"
+                  />
+                  <div class="gallery__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__img">
+                  <img
+                    src="https://bizweb.dktcdn.net/100/492/035/themes/919334/assets/image_ins_5.png?1704344199488"
+                    alt="Gallerys"
+                  />
+                  <div class="gallery__instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <video class="video" autoplay muted loop playsinline>
+            <source
+              src="https://www.dropbox.com/scl/fi/ge1e9mrmjfnfgqi9u8jpo/flour_-_49549-1080p.mp4?rlkey=svv3pywf7s9z8iervjzf2a8b2&raw=1"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+  </body>
+</html>
